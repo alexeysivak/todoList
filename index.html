@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Todo list</title>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+	<body>
+		<main class="main">
+			<form
+				class="form__container container-fluid col-12"
+				id="formContainer"
+			>
+				<input
+					type="text"
+					class="form__input form-control"
+					id="formInput"
+					placeholder="create todo"
+				/>
+				<fieldset class="form__controls col-2">
+					<button
+						type="button"
+						class="form__button btn btn-outline-primary col-5"
+						id="formChangeButton"
+					>
+						Change
+					</button>
+					<button
+						type="submit"
+						class="form__button btn btn-outline-primary col-5"
+						id="formAddButton"
+					>
+						Add
+					</button>
+				</fieldset>
+			</form>
+			<div
+				class="todos__container container-fluid"
+				id="todosContainer"
+			></div>
+		</main>
+
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>

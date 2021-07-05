@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+.body {
+	font-family: sans-serif;
+}
+
+.main {
+	position: relative;
+}
+
+.form__container {
+	padding: 1.5rem;
+	display: flex;
+	position: fixed;
+	top: 0;
+	height: 5.6rem;
+	background: #fff;
+	z-index: 100;
+}
+
+.form__button {
+	margin-left: 1rem;
+}
+
+.form__input {
+	border-color: #0d6efd;
+}
+
+.form__controls {
+	display: flex;
+	justify-content: space-between;
+}
+
+.todos__container {
+	position: absolute;
+	top: 5.6rem;
+	bottom: 0;
+}
+
+.todo {
+	display: flex;
+	margin: 1rem 0;
+}
+
+.todo__content {
+	border: 1px solid #0d6efd;
+	border-radius: 3px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.todo__content p {
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.todo__controls {
+	display: flex;
+	justify-content: space-between;
+}
+
+.todo__button {
+	margin: 0 1rem;
+}
+
+.done {
+	background: #0d6efd;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: line-through;
+}
