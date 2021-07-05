@@ -27,7 +27,6 @@ class JSONplaceholderApi {
 
 		return fetch(this.BASE_TODOS_URL, options)
 			.then((response) => response.json())
-			.then(alert('Adding sacceded'))
 			.catch((error) => {
 				console.error(error);
 			});
@@ -36,11 +35,9 @@ class JSONplaceholderApi {
 	deleteData(targetId) {
 		fetch(`${this.BASE_TODOS_URL}/${targetId}`, {
 			method: 'DELETE',
-		})
-			.then(alert('Deletion sacceded'))
-			.catch((error) => {
-				console.error(error);
-			});
+		}).catch((error) => {
+			console.error(error);
+		});
 	}
 
 	changeData(todoToChange) {
@@ -54,7 +51,6 @@ class JSONplaceholderApi {
 
 		fetch(`${this.BASE_TODOS_URL}/${todoToChange.id}`, options)
 			.then((response) => response.json())
-			.then(alert('Changing sacceded'))
 			.catch((error) => {
 				console.error(error);
 			});
