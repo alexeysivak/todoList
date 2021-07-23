@@ -24,37 +24,18 @@
 	</head>
 	<body>
 		<main class="main">
-			<form
-				class="form__container container-fluid col-12"
-				id="formContainer"
-			>
-				<input
-					type="text"
-					class="form__input form-control"
-					id="formInput"
-					placeholder="create todo"
-				/>
-				<fieldset class="form__controls col-2">
-					<button
-						type="button"
-						class="form__button btn btn-outline-primary col-5"
-						id="formChangeButton"
-					>
+			<form class="form__container container-fluid" id="formContainer">
+				<input type="text" class="form__input form-control" id="formInput" placeholder="create todo" />
+				<fieldset class="form__controls col-12 col-sm-6 col-md-4 col-xl-2">
+					<button type="button" class="form__button btn btn-outline-primary col-5" id="formChangeButton">
 						Change
 					</button>
-					<button
-						type="submit"
-						class="form__button btn btn-outline-primary col-5"
-						id="formAddButton"
-					>
+					<button type="submit" class="form__button btn btn-outline-primary col-5" id="formAddButton">
 						Add
 					</button>
 				</fieldset>
 			</form>
-			<div
-				class="todos__container container-fluid"
-				id="todosContainer"
-			></div>
+			<div class="todos__container container-fluid" id="todosContainer"></div>
 		</main>
 
 		<script type="module" src="./js/main.js"></script>

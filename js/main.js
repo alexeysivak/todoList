@@ -22,9 +22,7 @@ async function initTodoList() {
 function initializeFormListeners() {
 	const FORM_CHANGE_BUTTON_ID = 'formChangeButton';
 
-	$formContainer
-		.on('submit', onFormContainerSubmit)
-		.on('click', '#' + FORM_CHANGE_BUTTON_ID, saveTodoChanges);
+	$formContainer.on('submit', onFormContainerSubmit).on('click', '#' + FORM_CHANGE_BUTTON_ID, saveTodoChanges);
 }
 
 function initializeListListeners() {
@@ -54,11 +52,11 @@ function renderList(todos) {
 
 function renderTodo(todo) {
 	const todoTemplate = `<div class="todo container-fluid" data-id=${todo.id}>
-                            <div class="todo__content col-10 ${
+                            <div class="todo__content col-12 col-sm-6 col-md-8 col-xl-10 ${
 								todo.completed ? 'done' : ''
 							}"><p>${todo.title}</p></div>
-                            <div class="todo__controls col-2">
-                            <button class="btn btn-outline-primary col-5 todo__button" id="changeButton">Change</button><button class="btn btn-outline-danger col-5" id="deleteButton">Delete</button>
+                            <div class="todo__controls col-12 col-sm-6 col-md-4 col-xl-2">
+                            <button class="btn btn-outline-primary col-5 todo__button" id="changeButton">Change</button><button class="btn btn-outline-danger col-5 todo__button" id="deleteButton">Delete</button>
                             </div>
                         </div>`;
 

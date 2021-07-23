@@ -1,5 +1,11 @@
+html {
+	font-size: 16px;
+}
+
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 .body {
@@ -63,7 +69,7 @@
 }
 
 .todo__button {
-	margin: 0 1rem;
+	margin: 0 0 0 1rem;
 }
 
 .done {
@@ -71,4 +77,33 @@
 	color: #fff;
 	font-weight: 700;
 	text-decoration: line-through;
+}
+
+button {
+	max-height: 40px;
+}
+
+@media screen and (max-width: 576px) {
+	.form__container {
+		flex-direction: column;
+		height: 8rem;
+	}
+
+	.form__button {
+		margin: 1rem 0;
+	}
+
+	.todos__container {
+		position: absolute;
+		top: 8rem;
+		bottom: 0;
+	}
+
+	.todo {
+		flex-direction: column;
+	}
+
+	.todo__button {
+		margin: 1rem 0;
+	}
 }
